@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main()
+{ int i,n,arr[100],sum,res[100];
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{ scanf("%d",&arr[i]);}
+
+for (i = 0; i <n ; i++)
+   {    if (arr[i] % 5 > 2 && !(arr[i] < 38))              
+                res[i] = arr[i] + (5-arr[i]%5);                               
+             else               
+                res[i] = arr[i];
+            }
+    for(i=0;i<n;i++)
+    {printf("%d\n",res[i]);}
+    return 0;
+}
